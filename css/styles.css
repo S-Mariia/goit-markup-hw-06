@@ -199,6 +199,7 @@ img {
   text-align: center;
   background-color: var(--accent-color);
   color: var(--second-color);
+  border: none;
 }
 
 /*------------------------BENEFITS-----------------------------*/
@@ -453,7 +454,6 @@ background-image: url(../images/clock.svg);
 .footer .container {
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
 }
 .footer-adress {
   margin-right: 70px;
@@ -462,7 +462,7 @@ footer .social-media-item:first-child {
   margin-left: 0;
 }
 .footer-join {
-  margin-right: 93px;
+  margin-right: auto;
 }
 .footer-join-text {
   display: inline-block;
@@ -513,7 +513,7 @@ footer .social-media-item:first-child {
 }
 
 .footer-input:focus {
-  border-color: #ffffff;
+  border-color: var(--accent-color);
   outline: transparent;
 }
 
@@ -573,7 +573,7 @@ footer .social-media-item:first-child {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   width: 528px;
-  min-height: 581px;
+  height: 581px;
   background-color: var(--main-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -618,12 +618,14 @@ text-align: center;
 color: var(--main-title-color);
 }
 .form-list {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .form-item:not(:last-child) {
   margin-bottom: 10px;
 }
+
 .modal-label {
+  display: block;
   margin-bottom: 4px;
 
 font-weight: 400;
@@ -668,9 +670,6 @@ color: var(--main-text-color);
 .modal-input:hover + .input-icon, .modal-input:focus + .input-icon {
   fill: var(--accent-color);
 } 
-.modal-form-field {
-  margin-bottom: 20px;
-}
 
 .form-comment {
   width: 100%;
@@ -698,11 +697,13 @@ color: rgba(117, 117, 117, 0.5);
   border-color: var(--accent-color);
   outline: none;
 }
-
+.modal-form-field {
+  margin-bottom: 30px;
+}
 .modal-policy {
 display: flex;
 align-items: center;
-margin-bottom: 30px;
+justify-content: center;
 
 font-size: 14px;
 line-height: 1.71;
